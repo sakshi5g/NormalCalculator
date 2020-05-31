@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color:black;
+		}
+		h1{
+			font-weight: bold;
+			color: white;
+			text-align: center;
+		}
+		#clear{
+			width: 310px;
+		}
+		.formstyle{
+			width: 309px;
+			height: 470px;
+			margin: auto;
+			border: 5px solid white;
+			border-radius: 10px;
+			background-color: white;
+		}
+		input{
+			width: 100px;
+			height: 50px;
+			background-color: skyblue;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		#text{
+			width: 305px;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>MY CALCULATOR</h1>
+	<div class="formstyle">
+		<form name="form">
+		<input id="text" type="text" name="answer"><br><br>
+		<input type="button" name="" value="1" onclick="form.answer.value +='1'">
+		<input type="button" name="" value="2" onclick="form.answer.value +='2'">
+		<input type="button" name="" value="3" onclick="form.answer.value +='3'">
+
+				<br><br>
+		<input type="button" name="" value="4" onclick="form.answer.value +='4'">
+		<input type="button" name="" value="5" onclick="form.answer.value +='5'">
+		<input type="button" name="" value="6" onclick="form.answer.value +='6'">
+			<br><br>
+		<input type="button" name="" value="7" onclick="form.answer.value +='7'">
+		<input type="button" name="" value="8" onclick="form.answer.value +='8'">
+		<input type="button" name="" value="9" onclick="form.answer.value +='9'">
+		<br><br>
+		<input type="button" name="" value="+" onclick="form.answer.value +='+'">
+		<input type="button" name="" value="-" onclick="form.answer.value +='-'">
+		<input type="button" name="" value="*" onclick="form.answer.value +='*'">
+		<br><br>
+		<input type="button" name="" value="/" onclick="form.answer.value +='/'">
+		<input type="button" name="" value="0" onclick="form.answer.value +='0'">
+		<input type="button" name="" value="=" onclick="form.answer.value =eval(form.answer.value)">
+		<br><br>
+		<input type="button" name="" value="clear all" onclick="form.answer.value=''" id="clear">
+	  
+	
+	</form>
+	</div>
+
+</body>
+</html>
